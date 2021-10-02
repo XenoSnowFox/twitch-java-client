@@ -9,6 +9,8 @@ public class TwitchClient {
 
 	private String clientSecret;
 
+	private TwitchAuthenticationClient twitchAuthenticationClient;
+
 	private TwitchClient() {
 	}
 
@@ -18,7 +20,20 @@ public class TwitchClient {
 		this.clientSecret = other.clientSecret;
 	}
 
+	String getClientId() {
+		return this.clientId;
+	}
 
+	String getClientSecret() {
+		return this.clientSecret;
+	}
+
+	public TwitchAuthenticationClient authentication() {
+		if (this.twitchAuthenticationClient == null) {
+			this.twitchAuthenticationClient = new TwitchAuthenticationClient(this);
+		}
+		return this.twitchAuthenticationClient;
+	}
 
 
 	public static class Builder {
