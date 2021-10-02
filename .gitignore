@@ -1,3 +1,13 @@
+# Folders
+.gradle/
+.idea/
+.classpath/
+.factorypath/
+.project/
+.settings/
+target/
+build/
+
 # Compiled class file
 *.class
 
