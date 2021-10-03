@@ -1,7 +1,5 @@
 package com.xenosnowfox.twitchjavaclient;
 
-import com.xenosnowfox.twitchjavaclient.clients.TwitchClient;
-
 public abstract class Twitch {
 
 	public static final String API_VERSION = "2021-10-01";

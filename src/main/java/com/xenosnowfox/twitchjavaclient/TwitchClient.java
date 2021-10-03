@@ -1,4 +1,6 @@
-package com.xenosnowfox.twitchjavaclient.clients;
+package com.xenosnowfox.twitchjavaclient;
+
+import com.xenosnowfox.twitchjavaclient.authentication.TwitchAuthenticationClient;
 
 import java.util.Objects;
 import java.util.Properties;
