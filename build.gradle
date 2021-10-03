@@ -3,7 +3,7 @@ plugins {
 	id 'java-library'
 }
 
-group 'com.xenosnowfox.twitchjavaclient'
+group 'com.xenosnowfox'
 version '0.0.0'
 
 repositories {
